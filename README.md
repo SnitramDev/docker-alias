@@ -23,16 +23,16 @@ brew install docker-machine-nfs (https://github.com/adlogix/docker-machine-nfs)
 2. Restart your computer
 
 3. Mount in your docker VM (e.g. default):
-
 docker-machine-nfs default --mount-opts="nolock,vers=3,tcp,fsc,rw,noatime"
 
-4. If you receive the "Cannot detected the NFS mount :(" error, then do the following:
 
-4.1. docker-machine regenerate-certs default
-
-4.2. docker-machine-nfs default
+# If you receive the "Cannot detected the NFS mount :(" error, then do the following:
+1. docker-machine regenerate-certs default
+2. docker-machine-nfs default
 
 "default" is the docker machine name.
+
+3. docker-machine-nfs default --mount-opts="nolock,vers=3,tcp,fsc,rw,noatime"
 
 ## Reference
 
