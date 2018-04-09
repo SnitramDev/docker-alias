@@ -16,7 +16,7 @@ docker-machine ip
 1. brew install docker-credential-helper
 2. docker login -> should work now
 
-### Speed up Docker in MacOS
+## Speed up Docker in MacOS
 1. Install docker machine NFS:
 brew install docker-machine-nfs (https://github.com/adlogix/docker-machine-nfs)
 
