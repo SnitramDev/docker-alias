@@ -5,12 +5,12 @@ Useful command line alias for [Docker](https://www.docker.io/). This is for my u
 1. Go to your home directory: cd ~/ 
 2. Add to .zshrc or to .bash_profile
 
-## Docker Toolbox
+# Docker Toolbox
 
 ### Get IP from docker machine
 docker-machine ip
 
-### Docker login error
+## Docker login error
 #### Error: error getting credentials - err: exec: "docker-credential-osxkeychain": executable file not found in $PATH, out:
 #### Solution:
 1. brew install docker-credential-helper
@@ -34,7 +34,7 @@ docker-machine-nfs default --mount-opts="nolock,vers=3,tcp,fsc,rw,noatime"
 
 3. docker-machine-nfs default --mount-opts="nolock,vers=3,tcp,fsc,rw,noatime"
 
-### Test speeds
+## Test speeds
 docker run -it -v /Users/youruser/test:/var/www alpine time dd if=/dev/zero of=/var/www/test.dat bs=1024 count=100000
 
 ## Reference
