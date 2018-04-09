@@ -34,6 +34,9 @@ docker-machine-nfs default --mount-opts="nolock,vers=3,tcp,fsc,rw,noatime"
 
 3. docker-machine-nfs default --mount-opts="nolock,vers=3,tcp,fsc,rw,noatime"
 
+### Test speeds
+docker run -it -v /Users/youruser/test:/var/www alpine time dd if=/dev/zero of=/var/www/test.dat bs=1024 count=100000
+
 ## Reference
 
 - [Useful Docker Bash functions and aliases](http://kartar.net/2014/03/useful-docker-bash-functions-and-aliases)
