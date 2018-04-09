@@ -5,8 +5,16 @@ Useful command line alias for [Docker](https://www.docker.io/). This is for my u
 1. Go to your home directory: cd ~/ 
 2. Add to .zshrc or to .bash_profile
 
-## Get IP from docker machine (docker toolbox)
+## Docker Toolbox
+
+### Get IP from docker machine
 docker-machine ip
+
+### Docker login error
+#### Error: error getting credentials - err: exec: "docker-credential-osxkeychain": executable file not found in $PATH, out:
+#### Solution:
+1. brew install docker-credential-helper
+2. docker login -> should work now
 
 ## Reference
 
