@@ -5,7 +5,7 @@ Useful command line alias for [Docker](https://www.docker.io/). This is for my u
 1. Go to your home directory: cd ~/ 
 2. Add to .zshrc or to .bash_profile
 
-# Get IP from docker machine (docker toolbox)
+## Get IP from docker machine (docker toolbox)
 docker-machine ip
 
 ## Reference
