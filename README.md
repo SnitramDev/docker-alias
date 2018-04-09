@@ -34,7 +34,7 @@ docker-machine-nfs default --mount-opts="nolock,vers=3,tcp,fsc,rw,noatime"
 
 3. docker-machine-nfs default --mount-opts="nolock,vers=3,tcp,fsc,rw,noatime"
 
-## Test speeds
+## Test Docker speed (you should expect < 1 sec results)
 docker run -it -v /Users/youruser/test:/var/www alpine time dd if=/dev/zero of=/var/www/test.dat bs=1024 count=100000
 
 ## Reference
