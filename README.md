@@ -27,11 +27,9 @@ docker-machine-nfs default --mount-opts="nolock,vers=3,tcp,fsc,rw,noatime"
 
 
 ### If you receive the "Cannot detected the NFS mount :(" error, then do the following:
+"default" is the docker machine name.
 1. docker-machine regenerate-certs default
 2. docker-machine-nfs default
-
-"default" is the docker machine name.
-
 3. docker-machine-nfs default --mount-opts="nolock,vers=3,tcp,fsc,rw,noatime"
 
 ## Test Docker speed (you should expect < 1 sec results)
