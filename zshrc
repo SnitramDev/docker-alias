@@ -2,6 +2,12 @@
 # Docker alias and function
 # ------------------------------------
 
+# Docker machine start - usage: dms default (default being your docker machine)
+alias dms="docker-machine start"
+
+# Docker machine start using the "default" name.
+alias dmsd="dms default"
+
 # Docker alias
 alias d="docker"
 
