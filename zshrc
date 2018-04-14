@@ -2,8 +2,14 @@
 # Docker alias and function
 # ------------------------------------
 
-# Docker machine start - usage: dms default (default being your docker machine)
-alias dms="docker-machine start"
+# Docker machine
+alias dm="docker-machine"
+
+# Start docker machine
+alias dmstart="docker-machine start && \ eval $(docker-machine env ${1:-${DEFAULT_DOCKER_MACHINE:-default}})"
+
+# Start docker machine shortcut alias
+alias dms="dmstart"
 
 # Docker machine start using the "default" name.
 alias dmsd="dms default"
