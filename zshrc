@@ -2,6 +2,9 @@
 # Docker alias and function
 # ------------------------------------
 
+# Set the docker machine name as a shell variable
+export DOCKER_MACHINE_NAME="default"
+
 # Docker machine
 alias dm="docker-machine"
 
