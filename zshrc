@@ -26,7 +26,7 @@ alias dl="docker ps -l -q"
 # Get container process
 alias dps="docker ps"
 
-# Get process included stop container
+# Get container processes including stopped containers
 alias dpa="docker ps -a"
 
 # Get images
